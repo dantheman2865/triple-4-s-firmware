@@ -1,7 +1,6 @@
 #include <bluefruit.h>
 
 BLEDis bledis;
-// cd689ca0-a5f3-4215-b0f1-dec4f83846ce
 // ce4638f8-c4de-f1b0-1542-f3a5a09c68cd
 uint8_t guid[16] = { 0xcd, 0x68, 0x9c, 0xa0, 0xa5, 0xf3, 0x42, 0x15, 0xb0, 0xf1, 0xde, 0xc4, 0xf8, 0x38, 0x46, 0xce };
 BLEService myService = BLEService(guid);
@@ -48,12 +47,6 @@ void loop() {
   }
   lastState = active;
   delay(100);
-//  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-//  setActive();
-//  delay(2500);                       // wait for a second
-//  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-//  setInactive();
-//  delay(2500);                       // wait for a second
 }
 uint8_t dat[1] = { 0x01 };
 void setActive() {
